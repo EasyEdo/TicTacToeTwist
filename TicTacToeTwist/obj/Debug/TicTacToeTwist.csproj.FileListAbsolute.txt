@@ -1,0 +1,7 @@
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.exe.config
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.exe
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.pdb
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csprojAssemblyReference.cache
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csproj.CoreCompileInputs.cache
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.exe
+C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.pdb
