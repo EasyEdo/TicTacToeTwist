@@ -20,9 +20,9 @@ namespace TicTacToeTwist {
         private Boolean p1Win = false;
         private Boolean p2Win = false;
         private int turn = 1;
-        private SoundPlayer ding = new SoundPlayer(@"C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\res\ding.wav");
-        private SoundPlayer wrong = new SoundPlayer(@"C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\res\wrong.wav");
-        private SoundPlayer win = new SoundPlayer(@"C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\res\win.wav");
+        private SoundPlayer ding = new SoundPlayer(Properties.Resources.ding);
+        private SoundPlayer wrong = new SoundPlayer(Properties.Resources.wrong);
+        private SoundPlayer win = new SoundPlayer(Properties.Resources.win);
 
         /// <summary>
         /// Initial Tic Tac Toe board.
@@ -43,12 +43,16 @@ namespace TicTacToeTwist {
                     Console.Clear();
                     Console.CursorTop = 3;
                     Console.CursorLeft = 10;
+                    PrintBoard();
+                    Console.CursorLeft = 10;
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(player1 + " Wins!");
                 }
                 else if (p2Win == true) {
                     Console.Clear();
                     Console.CursorTop = 3;
+                    Console.CursorLeft = 10;
+                    PrintBoard();
                     Console.CursorLeft = 10;
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine(player2 + " Wins!");
@@ -67,10 +71,12 @@ namespace TicTacToeTwist {
             Console.CursorLeft = 10;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Please enter Player One's name:");
+            Console.CursorLeft = 10;
             SetP1Name(Console.ReadLine());
             Console.CursorLeft = 10;
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Please enter Player Two's name:");
+            Console.CursorLeft = 10;
             SetP2Name(Console.ReadLine());
             Console.Clear();
         }
@@ -86,10 +92,12 @@ namespace TicTacToeTwist {
             }
             else
                 Console.ForegroundColor = ConsoleColor.Blue;
-            Console.CursorLeft = 5;
+            Console.CursorLeft = 10;
             Console.WriteLine(GetPlayer() + "'s Turn");
-            Console.CursorLeft = 5;
-            Console.WriteLine("Enter your placement corresponding to the numbers below (1-9): \n");
+            Console.CursorLeft = 10;
+            Console.WriteLine("Enter your placement corresponding");
+            Console.CursorLeft = 10;
+            Console.WriteLine("to the numbers below(1 - 9): \n");
         }
 
         /// <summary>

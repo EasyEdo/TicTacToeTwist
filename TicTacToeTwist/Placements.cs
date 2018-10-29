@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 namespace TicTacToeTwist {
     class Placements {
         private static int placement = 0;
+        private int placementCounter = 0;
 
         public void PlacementCheck(Board board, int p, int r, int c) {
             if (placement == p && board.GetBoard(r, c) != "X" && board.GetBoard(r, c) != "O") {
@@ -32,31 +33,53 @@ namespace TicTacToeTwist {
                 Console.Clear();
                 board.PrintTurns();
                 board.PrintBoard();
+                board.CheckWin();
 
-                // The following lines check for a tie game.
-                int placementCounter = 1;
-                if (!board.GetGameOver()) {
-                    for (int i = 0; i < 3; i++) { 
-                        for (int j = 0; j < 3; j++) {
-                            if (board.GetBoard(i,j) == "X" || board.GetBoard(i,j) == "O") {
-                                placementCounter++;
-                            }
-                        }
-                    }
-                    if (placementCounter == 9) {
-                        Console.CursorTop = 5;
-                        Console.CursorLeft = 10;
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Tie Game");
-                        Thread.Sleep(100);
-                        Environment.Exit(0);
-                    }
-                }
-
+                placementCounter++;
+                endlessTTT(board);
+               
                 // Checks for a game over.
                 if (board.GetGameOver()) {
                     board.PlayWin();
                 }
+            }
+        }
+
+        /// <summary>
+        /// This method checks for how many placements have been made.
+        /// If the placementCounter reaches 7 then the first move made gets erased,
+        /// then the next, and so on till someone wins, there can be no draw game.
+        /// If the placement Counter reaches 15 then it is reset back down to 6.
+        /// </summary>
+        /// <param name="board"></param>
+        private void endlessTTT(Board board) {
+            if (placementCounter == 7) {
+                board.SetBoard(0, 0, "1");
+            }
+            if (placementCounter == 8) {
+                board.SetBoard(0, 1, "2");
+            }
+            if (placementCounter == 9) {
+                board.SetBoard(0, 2, "3");
+            }
+            if (placementCounter == 10) {
+                board.SetBoard(1, 0, "4");
+            }
+            if (placementCounter == 11) {
+                board.SetBoard(1, 1, "5");
+            }
+            if (placementCounter == 12) {
+                board.SetBoard(1, 2, "6");
+            }
+            if (placementCounter == 13) {
+                board.SetBoard(2, 0, "7");
+            }
+            if (placementCounter == 14) {
+                board.SetBoard(2, 1, "8");
+            }
+            if (placementCounter == 15) {
+                board.SetBoard(2, 2, "9");
+                placementCounter = 6;
             }
         }
 
@@ -68,6 +91,7 @@ namespace TicTacToeTwist {
                 board.PlayWrong();
                 Console.WriteLine("Please enter a Placement between 1 and 9.");
             }
+
             PlacementCheck(board, 1, 0, 0);
             PlacementCheck(board, 2, 0, 1);
             PlacementCheck(board, 3, 0, 2);

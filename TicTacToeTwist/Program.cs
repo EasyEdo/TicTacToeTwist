@@ -38,7 +38,6 @@ namespace TicTacToeTwist {
             // win if it is not a game over situation.
             while (board.GetGameOver() != true) {
                 placements.Update(board);
-                board.CheckWin();
             }
         }
     }

@@ -5,3 +5,12 @@ C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTw
 C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csproj.CoreCompileInputs.cache
 C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.exe
 C:\Users\Ethan\Documents\Google Drive\Ein\2410-Csharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.pdb
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.exe.config
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.exe
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\bin\Debug\TicTacToeTwist.pdb
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csproj.CoreCompileInputs.cache
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.exe
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.pdb
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csprojAssemblyReference.cache
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.Properties.Resources.resources
+D:\Google Drive\Ein\1410_CSharp\TicTacToeTwist\TicTacToeTwist\obj\Debug\TicTacToeTwist.csproj.GenerateResource.cache
